@@ -1,0 +1,115 @@
+body {
+    background: url("../img/afganistan.png") no-repeat center center fixed; 
+    background-size: cover;
+    font-family: 'Roboto Condensed', 'Segoe UI', sans-serif;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+    text-align: center;
+    color: white;
+}
+
+@keyframes shaking {
+    from {transform: skewX(1deg);}
+    to {transform: skewX(-1deg);}
+}
+
+.obicat {
+    height: 100%;
+    position: fixed;
+    right: 5%;
+    bottom: 0px;
+    animation-name: shaking;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    position: fixed;
+    left: 10%;
+    bottom: 10%;
+    transform: rotate(-10deg);
+}
+
+.menu > a {
+    display: block;
+    color: white;
+    text-align: -moz-left;
+    text-align: -webkit-left;
+    text-align: left;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 3rem;
+    transform: rotate(10deg) skewX(5deg) translate(0px,0px);
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: 6px solid white;
+    padding-left: 6px;
+    margin-top: 1rem;
+    transition: transform 0.5s, border-left 0.5s;
+    text-shadow: 2px 2px 4px black; 
+}
+
+.menu > a:hover {
+    border-left: 60px solid white;
+    transform: rotate(10deg) skewX(5deg) translate(-54px,0px);
+}
+
+.copyright {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    color: white;
+}
+
+.copyright > p {
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-size: 0.5rem;
+}
+
+.logo {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    text-shadow: 0px 0px 3px black;
+}
+
+.metal {
+    color: #e90101;
+    font-size: 3.5rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.gear {
+    font-size: 4rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    transform: translateY(-1.7rem);
+}
+
+.solid {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 1.5rem;
+}
+
+.fog {
+    position: fixed;
+    width: 100%;
+    bottom: -50%;
+    left: 0px;
+    animation-name: shaking;
+    animation-duration: 10s;
+    animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
