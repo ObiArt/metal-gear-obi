@@ -8,21 +8,11 @@ body {
     color: white;
 }
 
-@keyframes shakingX {
-    from {transform: skewX(1deg);}
-    to {transform: skewX(-1deg);}
-}
-
 .obicat {
     height: 100%;
     position: fixed;
     right: 5%;
     bottom: 0px;
-    animation-name: shakingX;
-    animation-duration: 4s;
-    animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 .main {
@@ -103,8 +93,8 @@ body {
 }
 
 @keyframes shakingY {
-    from {transform: skewY(5deg);}
-    to {transform: skewY(-5deg);}
+    from {transform: skew(5deg, -5deg);}
+    to {transform: skew(-5deg, 5deg);}
 }
 
 .fog {
